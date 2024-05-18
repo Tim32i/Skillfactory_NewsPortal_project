@@ -1,0 +1,33 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% load custom_tags %}
+
+{% block title %}
+Posts
+{% endblock title %}
+
+
+{% block content%}
+<h2>Количество постов: {{posts|length}}</h2>
+<h3>{% current_time '%b %d %Y' %}</h3>
+<table>
+    <tr>
+        <td>Заголовок</td>
+        <td>Дата публикации</td>
+        <td>Текст</td>
+        <td>Рейтинг</td>
+    </tr>
+    {% for post in posts%}
+      <tr>
+        <td><a class="nav-link" href={{post.pk}}><u><b>{{post.post_title}}</u></b></a></td>
+        <td>{{post.time_create|date:'d M Y'}}</td>
+        <td>{{post.post_content|truncatechars:50|censor}}</td>
+        <td>{{post.post_rating|censor}}</td>
+      </tr>
+    {% endfor%}
+
+</table>
+
+{% endblock content%}
