@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .views import redirect_view
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pages/', include('django.contrib.flatpages.urls')),
-    path('news/', include('NewsPortal_app.urls'))
+    path('news/', include('NewsPortal_app.urls')),
+    path('', redirect_view),
 ]
