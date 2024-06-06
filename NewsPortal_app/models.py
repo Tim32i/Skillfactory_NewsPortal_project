@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.urls import reverse
 
 class Author(models.Model):
     author_user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -16,6 +17,9 @@ class Author(models.Model):
             total_rating += elem_user_comment.rating_comment
         self.author_rating = total_rating
         self.save()
+
+    def __str__(self):
+        return self.author_user.username
 
 
 class Category(models.Model):
@@ -34,6 +38,11 @@ class Category(models.Model):
     ]
 
     category_name = models.CharField(max_length=2, unique=True, choices=CATEGORY_LIST, default='PO')
+
+    def __str__(self):
+        for i in range(len(self.CATEGORY_LIST)):
+            if self.CATEGORY_LIST[i][0] == self.category_name:
+                return self.CATEGORY_LIST[i][1]
 
 
 class Post(models.Model):
@@ -61,6 +70,12 @@ class Post(models.Model):
 
     def preview(self):
         return self.post_content[:124] + '...'
+
+    def __str__(self):
+        return self.post_title[:20]
+
+    def get_absolute_url(self):
+        return reverse('post_detail', args=[str(self.id)])
 
 
 class PostCategory(models.Model):

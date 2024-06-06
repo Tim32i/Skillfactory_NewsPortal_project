@@ -18,4 +18,24 @@ Post
     <h3>Вариант c цензорм</h3>
     {{post.post_content|censor}}
 </p>
+<br><br>
+<p>Тип поста   -  {{post.get_type_post_display}}</p>
+<br>
+<br>
+<br>
+{% if post.type_post == 'N'%}
+    <a href="/news/news/{{post.pk}}/edit">Редактировать новость</a>
+{% else %}
+    <a href="/news/articles/{{post.pk}}/edit">Редактировать статью</a>
+{% endif %}
+<br><br><br>
+{% if post.type_post == 'N'%}
+    <a href="/news/news/{{post.pk}}/delete">Удалить новость</a>
+{% else %}
+    <a href="/news/articles/{{post.pk}}/delete">Удалить статью</a>
+{% endif %}
+
+
+
+
 {% endblock content%}

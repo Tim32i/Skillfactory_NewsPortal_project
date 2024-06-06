@@ -10,8 +10,14 @@ Posts
 
 
 {% block content%}
-<h2>Количество постов: {{posts|length}}</h2>
+<h2>Количество новостей: {{posts|length}}</h2>
 <h3>{% current_time '%b %d %Y' %}</h3>
+<form action="" method="get">
+    {{ filterset.form.as_p }}
+    <input type="submit" value="Найти">
+
+</form>
+
 <table>
     <tr>
         <td>Заголовок</td>
@@ -36,10 +42,10 @@ Posts
 
    {# Информация о предыдущих страницах #}
    {% if page_obj.has_previous %}
-       <a href="?page=1">1</a>
+       <a href="?{% url_replace page=1 %}">1</a>
        {% if page_obj.previous_page_number != 1 %}
            ...
-           <a href="?page={{ page_obj.previous_page_number }}">{{ page_obj.previous_page_number }}</a>
+           <a href="?{% url_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
        {% endif %}
    {% endif %}
 
@@ -48,19 +54,14 @@ Posts
 
    {# Информация о следующих страницах #}
    {% if page_obj.has_next %}
-       <a href="?page={{ page_obj.next_page_number }}">{{ page_obj.next_page_number }}</a>
+       <a href="?{% url_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
        {% if paginator.num_pages != page_obj.next_page_number %}
            ...
-           <a href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
+           <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
        {% endif %}
    {% endif %}
 
-<h3><a href="/news/search">Только новости с возможностью поиска</a></h3>
-<br><br>
-
-<a href="news/create">Добавить новость</a>
-<br><br>
-<a href="articles/create">Добавить статью</a>
-
+<h3><a href="/news/">Все посты</a></h3>
+<a href="../news/create/">Добавить новость</a>
 
 {% endblock content%}
