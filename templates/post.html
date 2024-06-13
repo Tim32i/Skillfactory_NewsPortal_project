@@ -28,14 +28,27 @@ Post
 {% else %}
     <a href="/news/articles/{{post.pk}}/edit">Редактировать статью</a>
 {% endif %}
-<br><br><br>
+
+{% if  not perms.NewsPortal_app.change_post %}
+(недостаточно прав <a href="/accounts/signup_author">Зарегистрироваться как автор?</a>)
+{% endif%}
+
+<br><br>
 {% if post.type_post == 'N'%}
     <a href="/news/news/{{post.pk}}/delete">Удалить новость</a>
 {% else %}
     <a href="/news/articles/{{post.pk}}/delete">Удалить статью</a>
 {% endif %}
+{% if  not perms.NewsPortal_app.delete_post %}
+(недостаточно прав <a href="/accounts/signup_author">Зарегистрироваться как автор?</a>)
+{% endif%}
+<br><br>
 
-
-
+Текущий пользователь:
+{% if not user.username %}
+Нет пользователя
+{% else %}
+{{ user.username }}
+{% endif%}
 
 {% endblock content%}

@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from .models import Post, PostCategory
 from .filters import NewsFilter
 from .forms import NewsForm, ArticleForm
+
 
 class PostListView(ListView):
     model = Post
@@ -37,7 +39,9 @@ class PostDetailView(DetailView):
     context_object_name = 'post'
 
 
-class NewsCreateView(CreateView):
+class NewsCreateView(PermissionRequiredMixin, LoginRequiredMixin, CreateView):
+    permission_required = 'NewsPortal_app.add_post'
+    raise_exception = True
     form_class = NewsForm
     model = Post
     template_name = 'news_create.html'
@@ -47,7 +51,9 @@ class NewsCreateView(CreateView):
         return super().form_valid(form)
 
 
-class ArticleCreateView(CreateView):
+class ArticleCreateView(PermissionRequiredMixin, LoginRequiredMixin, CreateView):
+    permission_required = 'NewsPortal_app.add_post'
+    raise_exception = True
     form_class = ArticleForm
     model = Post
     template_name = 'article_create.html'
@@ -58,7 +64,9 @@ class ArticleCreateView(CreateView):
         return super().form_valid(form)
 
 
-class NewsUpdateView(UpdateView):
+class NewsUpdateView(PermissionRequiredMixin, LoginRequiredMixin, UpdateView):
+    permission_required = 'NewsPortal_app.change_post'
+    raise_exception = True
     form_class = NewsForm
     model = Post
     template_name = 'news_update.html'
@@ -68,7 +76,9 @@ class NewsUpdateView(UpdateView):
         return super().form_valid(form)
 
 
-class ArticleUpdateView(UpdateView):
+class ArticleUpdateView(PermissionRequiredMixin, LoginRequiredMixin, UpdateView):
+    permission_required = 'NewsPortal_app.change_post'
+    raise_exception = True
     form_class = ArticleForm
     model = Post
     template_name = 'article_update.html'
@@ -79,7 +89,8 @@ class ArticleUpdateView(UpdateView):
         return super().form_valid(form)
 
 
-class PostDeleteView(DeleteView):
+class PostDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    permission_required = 'NewsPortal_app.delete_post'
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('posts_list')

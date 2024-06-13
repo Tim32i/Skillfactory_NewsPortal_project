@@ -59,8 +59,23 @@ Posts
 <br><br>
 
 <a href="news/create">Добавить новость</a>
-<br><br>
+{% if  not perms.NewsPortal_app.add_post %}
+(недостаточно прав <a href="/accounts/signup_author">Зарегистрироваться как автор?</a>)
+{% endif%}
+
+<br>
 <a href="articles/create">Добавить статью</a>
+{% if  not perms.NewsPortal_app.add_post %}
+(недостаточно прав <a href="/accounts/signup_author">Зарегистрироваться как автор?</a>)
+{% endif%}
+<br><br>
+
+Текущий пользователь:
+{% if not user.username %}
+Нет пользователя
+{% else %}
+{{ user.username }}
+{% endif%}
 
 
 {% endblock content%}
