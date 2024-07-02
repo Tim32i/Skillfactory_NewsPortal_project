@@ -1,0 +1,36 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+Subscriptions
+{% endblock title %}
+
+{% block content %}
+    {% for category in categories %}
+      <p>
+          {{ category }}
+          <form method="post">
+             {% csrf_token %}
+             <input type="hidden" name="category_id" value="{{ category.id }}" />
+
+             {% if category.user_subscribed %}
+                <button disabled>Подписаться</button>
+                <button name="action" value="unsubscribe">Отписаться</button>
+             {% else %}
+                <button name="action" value="subscribe">Подписаться</button>
+                <button disabled>Отписаться</button>
+             {% endif %}
+          </form>
+      </p>
+    {% endfor %}
+
+<br><br>
+Текущий пользователь:
+{% if not user.username %}
+Нет пользователя
+{% else %}
+{{ user.username }}
+{% endif%}
+<br><br>
+<a href="../">Назад</a>
+
+{% endblock content %}

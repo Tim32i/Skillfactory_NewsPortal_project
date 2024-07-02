@@ -20,9 +20,13 @@ Post
 </p>
 <br><br>
 <p>Тип поста   -  {{post.get_type_post_display}}</p>
-<br>
-<br>
-<br>
+<p>Категории:&nbsp&nbsp
+    {% for category in categories %}
+       {{category}}
+    {% endfor %}
+    <br><br>
+</p>
+
 {% if post.type_post == 'N'%}
     <a href="/news/news/{{post.pk}}/edit">Редактировать новость</a>
 {% else %}
@@ -33,7 +37,7 @@ Post
 (недостаточно прав <a href="/accounts/signup_author">Зарегистрироваться как автор?</a>)
 {% endif%}
 
-<br><br>
+<br>
 {% if post.type_post == 'N'%}
     <a href="/news/news/{{post.pk}}/delete">Удалить новость</a>
 {% else %}

@@ -1,4 +1,4 @@
-{% extends 'flatpages/default.html' %}
+{% extends 'flatpages\default.html' %}
 
 {% load custom_filters %}
 
@@ -73,5 +73,5 @@ Posts
 {% else %}
 {{ user.username }}
 {% endif%}
-
+<a href="/news/subscriptions/">Подписки</a>
 {% endblock content%}

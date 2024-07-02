@@ -21,5 +21,20 @@ class Signup_Author(CreateView):
         return super().form_valid(form)
 
 
+def logout_redirect(request):
+    if request.user.id is not None:
+        for s in Session.objects.all():
+            data = s.get_decoded()
+            data_get = data.get('_auth_user_id', None)
+            if data_get is None:
+                continue
+            if int(data_get) == int(request.user.id):
+                s.delete()
+
+    response = redirect('/news/')
+    return response
+
+
+
 
 

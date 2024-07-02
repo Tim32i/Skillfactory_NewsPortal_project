@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Здравствуйте. Новая <a href="{{ link }}">
+    {% if type_post == 'A' %}
+    Статья
+    {% else %}
+    Новость
+    {% endif %}
+</a> в Вашем любимом разделе на портале новостей NewsPortal</h2>
+<p>{{ text }}</p>
+</body>
+
+</html>
