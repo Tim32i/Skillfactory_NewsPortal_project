@@ -14,42 +14,6 @@ from NewsPortal_app.models import Post, Category, Subscriber
 logger = logging.getLogger(__name__)
 
 
-def my_job():
-    today = datetime.datetime.now()
-    last_week = today - datetime.timedelta(days=7)
-    posts = Post.objects.filter(time_create__gte=last_week)
-    categories_id = set(posts.values_list('categories', flat=True).values_list('post_category__pk', flat=True))
-    subscribers = []
-    for category_id in categories_id:
-        subscribers += Category.objects.get(pk=category_id).subscribers.all()
-    subscribers = set(subscribers)                                               # убираем дубляж
-
-    # рассылка писем
-
-    html_content = render_to_string(
-        'daily_post.html',
-        {
-            'link': settings.SITE_URL,
-            'posts': posts,
-        }
-    )
-    msg_subject = 'Посты за неделю'
-    msg_body = ''
-    msg_from_email = settings.DEFAULT_FROM_EMAIL
-
-    for subscriber in subscribers:
-        print('subsciber:', subscriber)
-        print(subscriber.user.email)
-        msg = EmailMultiAlternatives(
-            subject=msg_subject,
-            body=msg_body,
-            from_email=msg_from_email,
-            to=[subscriber.user.email,]
-        )
-        msg.attach_alternative(html_content, 'text/html')
-        msg.send()
-
-
 @util.close_old_connections
 def delete_old_job_executions(max_age=604_800):
     """

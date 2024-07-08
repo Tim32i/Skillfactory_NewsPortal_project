@@ -12,6 +12,7 @@ from django.http import HttpResponseRedirect
 from .models import Post, PostCategory, Category, Subscriber
 from .filters import NewsFilter
 from .forms import PostForm
+from .tasks import notify_about_new_post
 
 
 class PostListView(ListView):
@@ -73,6 +74,8 @@ class NewsCreateView(PermissionRequiredMixin, LoginRequiredMixin, FormView):
         for category_id in categories_list_id:
             post_new.post_category.add(category_id['id'])                   # срабатывает m2m_changed
         post_new.save()
+        notify_about_new_post.apply_async([post_new.pk], countdown=1)
+
 
         if form.is_valid():
             return HttpResponseRedirect(f'/news/search/{post_new.pk}')
@@ -101,6 +104,7 @@ class ArticleCreateView(PermissionRequiredMixin, LoginRequiredMixin, FormView):
         for category_id in categories_list_id:
             post_new.post_category.add(category_id['id'])                     # срабатывает m2m_changed
         post_new.save()
+        notify_about_new_post.apply_async([post_new.pk], countdown=1)
 
         if form.is_valid():
             return HttpResponseRedirect(f'/news/{post_new.pk}')
