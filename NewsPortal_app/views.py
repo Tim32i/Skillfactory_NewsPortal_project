@@ -8,6 +8,7 @@ from django.db.models import Exists, OuterRef
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
+from django.core.cache import cache
 
 from .models import Post, PostCategory, Category, Subscriber
 from .filters import NewsFilter
@@ -45,11 +46,20 @@ class PostDetailView(DetailView):
     model = Post
     template_name = 'post.html'
     context_object_name = 'post'
+    queryset = Post.objects.all()
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         post_categories_id = PostCategory.objects.filter(post=self.object).values('category')
         context['categories'] = Category.objects.filter(id__in=post_categories_id)
         return context
+
+    def get_object(self, *args, **kwargs):
+        obj = cache.get(f"post-{kwargs['pk']}", None)
+        if not obj:
+            obj = super().get_object(queryset=self.queryset)
+            cache.set(f"post-{self.kwargs['pk']}", obj)
+        return obj
+
 
 
 class NewsCreateView(PermissionRequiredMixin, LoginRequiredMixin, FormView):
