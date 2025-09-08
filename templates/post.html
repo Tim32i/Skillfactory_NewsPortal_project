@@ -1,5 +1,5 @@
 {% extends 'flatpages/default.html'%}
-
+{% load i18n %}
 {% load custom_filters %}
 
 {% block title %}
@@ -11,16 +11,16 @@ Post
 <br>
 <h2>{{post.time_create|date:'d.M.Y'}}</h2>
 <p>
-    <h3>Вариант без цензора</h3>
+    <h3>{% trans "Without censor" %}</h3>
     {{post.post_content}}
 </p>
 <p>
-    <h3>Вариант c цензорм</h3>
+    <h3>{% trans "With censor" %}</h3>
     {{post.post_content|censor}}
 </p>
 <br><br>
-<p>Тип поста   -  {{post.get_type_post_display}}</p>
-<p>Категории:&nbsp&nbsp
+<p>{% trans "Post type" %}   -  {{post.get_type_post_display}}</p>
+<p>{% trans "Categories" %}:&nbsp&nbsp
     {% for category in categories %}
        {{category}}
     {% endfor %}
@@ -28,29 +28,29 @@ Post
 </p>
 
 {% if post.type_post == 'N'%}
-    <a href="/news/news/{{post.pk}}/edit">Редактировать новость</a>
+    <a href="/news/news/{{post.pk}}/edit">{% trans "Edit news" %}</a>
 {% else %}
-    <a href="/news/articles/{{post.pk}}/edit">Редактировать статью</a>
+    <a href="/news/articles/{{post.pk}}/edit">{% trans "Edit article" %}</a>
 {% endif %}
 
 {% if  not perms.NewsPortal_app.change_post %}
-(недостаточно прав <a href="/accounts/signup_author">Зарегистрироваться как автор?</a>)
+({% trans "Unsufficient privileges" %} <a href="/accounts/signup_author">{% trans "Register as author" %}?</a>)
 {% endif%}
 
 <br>
 {% if post.type_post == 'N'%}
-    <a href="/news/news/{{post.pk}}/delete">Удалить новость</a>
+    <a href="/news/news/{{post.pk}}/delete">{% trans "Delete news" %}</a>
 {% else %}
-    <a href="/news/articles/{{post.pk}}/delete">Удалить статью</a>
+    <a href="/news/articles/{{post.pk}}/delete">{% trans "Delete article" %}</a>
 {% endif %}
 {% if  not perms.NewsPortal_app.delete_post %}
-(недостаточно прав <a href="/accounts/signup_author">Зарегистрироваться как автор?</a>)
+({% trans "Unsufficient privileges" %} <a href="/accounts/signup_author">{% trans "Register as author" %}?</a>)
 {% endif%}
 <br><br>
 
-Текущий пользователь:
+{% trans "Current user" %}:
 {% if not user.username %}
-Нет пользователя
+{% trans "No user" %}
 {% else %}
 {{ user.username }}
 {% endif%}

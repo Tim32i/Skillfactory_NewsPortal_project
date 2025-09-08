@@ -18,6 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import redirect_view
+from NewsPortal_app.views import Index
 
 
 
@@ -28,4 +29,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('accounts/', include('accounts.urls')),
     path('', redirect_view),
+    path('i18n/', include('django.conf.urls.i18n')),
+    path('index', Index.as_view()),
 ]

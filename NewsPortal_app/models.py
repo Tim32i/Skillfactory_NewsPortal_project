@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.core.cache import cache
 
 
+
 class Author(models.Model):
     author_user = models.OneToOneField(User, on_delete=models.CASCADE)
     author_rating = models.IntegerField(default=0)
@@ -39,7 +40,7 @@ class Category(models.Model):
         ('HI', "История"),
     ]
 
-    category_name = models.CharField(max_length=2, unique=True, choices=CATEGORY_LIST, default='PO')
+    category_name = models.CharField(max_length=2, choices=CATEGORY_LIST, default='PO')
 
     def __str__(self):
         for i in range(len(self.CATEGORY_LIST)):
@@ -51,7 +52,7 @@ class Post(models.Model):
 
     TYPE_POST = [
         ('N', "Новости"),
-        ('A', "Статья")
+        ('A', "Статья"),
     ]
 
     type_post = models.CharField(max_length=1, choices=TYPE_POST, default='A')

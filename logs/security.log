@@ -1,0 +1,2 @@
+2025-08-30 20:43:06,801 WARNING log Forbidden (CSRF token from POST incorrect.): /admin/login/
+2025-09-08 22:34:15,146 WARNING log Forbidden (CSRF token from POST incorrect.): /accounts/signup/

@@ -1,5 +1,7 @@
 {% extends 'flatpages\default.html' %}
 
+{% load i18n %}
+
 {% load custom_filters %}
 
 {% load custom_tags %}
@@ -10,7 +12,7 @@ Posts
 
 
 {% block content%}
-<h2>Количество новостей: {{posts|length}}</h2>
+<h2>{% trans "Number of news" %}: {{posts|length}}</h2>
 <h3>{% current_time '%b %d %Y' %}</h3>
 <form action="" method="get">
     {{ filterset.form.as_p }}
@@ -20,15 +22,15 @@ Posts
 
 <table>
     <tr>
-        <td>Заголовок</td>
-        <td>Дата публикации</td>
-        <td>Тип поста</td>
-        <td>Текст</td>
-        <td>Рейтинг</td>
+        <td>{% trans "Heading" %}</td>
+        <td>{% trans "Publication date" %}</td>
+        <td>{% trans "Post type" %}</td>
+        <td>{% trans "Content begin" %}</td>
+        <td>{% trans "Rating" %}</td>
     </tr>
     {% for post in posts%}
       <tr>
-        <td><a class="nav-link" href={{post.pk}}><u><b>{{post.post_title}}</u></b></a></td>
+          <td><a class="nav-link" href={{post.pk}}><u><b>{{post.post_title}}</b></u></a></td>
         <td>{{post.time_create|date:'d M Y'}}</td>
         <td>{{post.get_type_post_display}}</td>
         <td>{{post.post_content|truncatechars:50|censor}}</td>
@@ -61,17 +63,17 @@ Posts
        {% endif %}
    {% endif %}
 
-<h3><a href="/news/">Все посты</a></h3>
-<a href="../news/create/">Добавить новость</a>
+<h3><a href="/news/">{% trans "All posts" %}</a></h3>
+<a href="../news/create/">{% trans "Add news" %}</a>
 {% if  not perms.NewsPortal_app.add_post %}
-(недостаточно прав <a href="/accounts/signup_author">Зарегистрироваться как автор?</a>)
+({% trans "Unsufficient privileges" %} <a href="/accounts/signup_author">{% trans "Register as author" %}?</a>)
 {% endif%}
 <br><br>
-Текущий пользователь:
+{% trans "Current user" %}:
 {% if not user.username %}
-Нет пользователя
+{% trans "No user" %}
 {% else %}
 {{ user.username }}
 {% endif%}
-<a href="/news/subscriptions/">Подписки</a>
+<a href="/news/subscriptions/">{% trans "Subscriptions" %}</a>
 {% endblock content%}

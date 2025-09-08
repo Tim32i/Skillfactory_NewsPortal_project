@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView, View
 from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.sessions.models import Session
@@ -14,9 +14,26 @@ from .models import Post, PostCategory, Category, Subscriber
 from .filters import NewsFilter
 from .forms import PostForm
 from .tasks import notify_about_new_post
+from django.utils.translation import gettext as _
+
+from django.utils import timezone
+import pytz
 
 
-class PostListView(ListView):
+class TimezoneSwitch(View):
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['current_time'] = timezone.localtime(timezone.now())
+        context['timezones'] = pytz.common_timezones
+
+        return context
+
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('./')
+
+
+class PostListView(ListView, TimezoneSwitch):
     model = Post
     ordering = 'time_create'
     template_name = 'posts.html'
@@ -24,7 +41,7 @@ class PostListView(ListView):
     paginate_by = 10
 
 
-class NewsListView(ListView):
+class NewsListView(ListView, TimezoneSwitch):
     model = Post
     ordering = 'time_create'
     template_name = 'news.html'
@@ -54,12 +71,11 @@ class PostDetailView(DetailView):
         return context
 
     def get_object(self, *args, **kwargs):
-        obj = cache.get(f"post-{kwargs['pk']}", None)
+        obj = cache.get(f"post-{self.kwargs['pk']}", None)
         if not obj:
             obj = super().get_object(queryset=self.queryset)
             cache.set(f"post-{self.kwargs['pk']}", obj)
         return obj
-
 
 
 class NewsCreateView(PermissionRequiredMixin, LoginRequiredMixin, FormView):
@@ -218,6 +234,20 @@ def subsciptions(request):
     return render(request,
                   'subscriptions.html',
                   {'categories': categories_with_subscriptions})
+
+
+class Index(View):
+    def get(self, request):
+        my_string = _('Hello world')
+
+        context = {
+            'string': my_string
+        }
+
+        return HttpResponse(render(request, 'index.html', context))
+
+
+
 
 
 

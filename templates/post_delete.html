@@ -1,5 +1,5 @@
 {% extends 'flatpages/default.html'%}
-
+{% load i18n %}
 {% block title %}
 Post create
 {% endblock title %}
@@ -7,14 +7,14 @@ Post create
 {% block content%}
 
 {% if object.type_post == 'N'%}
-<h1>Удаление новости</h1>
+<h1>{% trans "Delete news" %}</h1>
 {% else %}
-<h1>Удаление статьи</h1>
+<h1>{% "Delete article" %}</h1>
 {% endif %}
 
 <form action="" method="post">
     {% csrf_token %}
-    <p>Удаляем "{{ object.post_title }}"?</p>
+    <p>{% trans "Delete" %} "{{ object.post_title }}"?</p>
     <input type="submit" value="Delete" />
 </form>
 

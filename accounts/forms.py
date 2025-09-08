@@ -42,6 +42,8 @@ class SignupForm_Author(UserCreationForm):
 class CustomSignupForm(SignupForm):
     def save(self, request):
         user = super().save(request)
+        common_group = Group.objects.get(name='common')
+        common_group.user_set.add(user)
 
         send_mail(
             subject='Добро пожаловать на наш новостной портал!',

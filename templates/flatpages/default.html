@@ -1,3 +1,7 @@
+{% load i18n %}
+{% load tz %}
+{% get_current_timezone as TIME_ZONE %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,6 +15,16 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'css\styles.css' %}" rel="stylesheet" />
+        <style>
+            body {
+             background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} darkcyan
+            {% else %} powderblue
+            {% endif %};}
+
+            select {width: 100px}
+
+
+        </style>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -45,6 +59,13 @@
                            <li class="nav-item">
                                <a class="nav-link" href="/accounts/logout">Log out</a>
                            </li>
+                           <li class="nav-item">
+                               {% include 'lang_switch.html' %}
+                           </li>
+                           <li class="nav-item">
+                               {% include 'timezone_switch.html' %}
+                           </li>
+
                        </ul>
                    </div>
              </div>
@@ -60,6 +81,6 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-
+{{ current_time|timezone:TIME_ZONE }}
     </body>
 </html>

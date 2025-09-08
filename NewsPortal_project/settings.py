@@ -25,14 +25,16 @@ LOG_DIR = os.path.join(BASE_DIR, 'logs')
 SECRET_KEY = 'django-insecure-&p_bor_e29ego_g3c=twcknw4ngbn*a0%%m(o0+!zm%w(l%ek3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,6 +54,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.yandex',
     'django_apscheduler',
+
 ]
 
 SITE_ID = 1
@@ -60,6 +63,9 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+
+    'django.middleware.locale.LocaleMiddleware',
+
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -69,9 +75,16 @@ MIDDLEWARE = [
 
     'allauth.account.middleware.AccountMiddleware',
 
+    'basic.middlewares.TimezoneMiddleware',
+
+
 ]
 
 ROOT_URLCONF = 'NewsPortal_project.urls'
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale')
+]
 
 TEMPLATES = [
     {
@@ -84,6 +97,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'NewsPortal_app.context_processors.get_current_time',
             ],
         },
     },
@@ -125,13 +139,18 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
+
+LANGUAGES = [
+    ('en-us', 'American english'),
+    ('ru', 'Русский')
+]
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = False
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -183,7 +202,7 @@ CELERY_RESULT_SERIALIZER = 'json'
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': os.path.join(BASE_DIR, 'cache_files')
+        'LOCATION': os.path.join(BASE_DIR, 'cache_files'),
     }
 }
 
@@ -262,8 +281,7 @@ LOGGING = {
             'class': 'django.utils.log.AdminEmailHandler',
             'formatter': 'f_console_error_critical',
             'filters': ['require_debug_false'],
-        },
-
+            },
     },
     'loggers': {
         'django': {
@@ -293,3 +311,4 @@ LOGGING = {
         },
     },
 }
+

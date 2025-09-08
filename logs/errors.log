@@ -1,0 +1,1693 @@
+2024-08-23 20:36:45,509 ERROR Internal Server Error: /news/7 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001FACE30DF40>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:36:45,619 ERROR "GET /news/7 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:36:52,611 ERROR Internal Server Error: /news/13 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001FACE1260C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:36:52,633 ERROR "GET /news/13 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:37:11,347 ERROR Internal Server Error: /news/101 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001FACE2E8140>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:37:11,369 ERROR "GET /news/101 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:37:24,763 ERROR Internal Server Error: /news/search/1 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001FACE234EC0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:37:24,784 ERROR "GET /news/search/1 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:37:31,186 ERROR Internal Server Error: /news/search/2 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001FACE388C00>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:37:31,208 ERROR "GET /news/search/2 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:37:37,866 ERROR Internal Server Error: /news/search/3 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001FACE2F8F80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:37:37,887 ERROR "GET /news/search/3 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:37:40,455 ERROR Internal Server Error: /news/search/3 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001FACDF1F540>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:37:40,476 ERROR "GET /news/search/3 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:39:03,080 ERROR Internal Server Error: /news/7 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x00000276EC58F080>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:39:03,105 ERROR "GET /news/7 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:43:43,479 ERROR Internal Server Error: /news/1 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000021FD6C01A80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:43:43,508 ERROR "GET /news/1 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:45:19,410 ERROR Internal Server Error: /news/9 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000021FD69BBA80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:45:19,433 ERROR "GET /news/9 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:46:10,354 ERROR Internal Server Error: /news/10 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000021FD5471CC0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:46:10,375 ERROR "GET /news/10 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:48:43,290 ERROR Internal Server Error: /news/13 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000027426CBA840>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:48:43,321 ERROR "GET /news/13 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:48:48,273 ERROR Internal Server Error: /news/3 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000027426AD6B80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:48:48,296 ERROR "GET /news/3 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:53:56,568 ERROR Internal Server Error: /news/4 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000023FF2280240>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:53:56,603 ERROR "GET /news/4 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:54:00,783 ERROR Internal Server Error: /news/1 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000023FF2273BC0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:54:00,804 ERROR "GET /news/1 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 20:54:30,498 ERROR Internal Server Error: /news/search/16 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000023FF214DE80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 20:54:30,521 ERROR "GET /news/search/16 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 21:01:25,542 ERROR Internal Server Error: /news/search/4 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000002091848A700>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 21:01:25,571 ERROR "GET /news/search/4 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 21:02:04,359 ERROR Internal Server Error: /news/1 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x00000209182AD8C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 21:02:04,382 ERROR "GET /news/1 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 21:12:55,817 ERROR Internal Server Error: /news/search/4 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001C73A93DF80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 21:12:55,847 ERROR "GET /news/search/4 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 21:13:54,595 ERROR Internal Server Error: /news/search/18 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001E2C600EB40>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 21:13:54,632 ERROR "GET /news/search/18 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 21:14:04,636 ERROR Internal Server Error: /news/search/16 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001E2C6002E80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 21:14:04,660 ERROR "GET /news/search/16 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 21:16:42,927 ERROR Internal Server Error: /news/search/19 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x0000020C4FE99140>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 21:16:42,969 ERROR "GET /news/search/19 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-23 21:21:07,001 ERROR Internal Server Error: /news/search/18 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x00000256924630C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\detail.py", line 108, in get
+    self.object = self.get_object()
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 57, in get_object
+    obj = cache.get(f"post-{kwargs['pk']}", None)
+KeyError: 'pk'
+2024-08-23 21:21:07,036 ERROR "GET /news/search/18 HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:01:42,359 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001B7BE510AC0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-25 20:01:42,557 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:03:45,482 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001A5425CF2C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-25 20:03:45,522 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:04:10,719 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001A5427D9580>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-25 20:04:10,746 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:05:47,474 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001A54276C5C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-25 20:05:47,522 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:07:22,931 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001A5424C2180>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-25 20:07:22,957 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:08:00,936 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x0000024C9744F880>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-25 20:08:00,975 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:08:23,171 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x0000024C974BBCC0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-25 20:08:23,195 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:09:15,515 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("<ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template."), <traceback object at 0x0000024C976A7840>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2024-08-25 20:09:15,536 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:10:17,309 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("<ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template."), <traceback object at 0x0000024C972BC9C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2024-08-25 20:10:17,329 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:10:35,027 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("<ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template."), <traceback object at 0x000001A32DA110C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2024-08-25 20:10:35,061 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:10:58,588 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("<ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template."), <traceback object at 0x000001A32DB44940>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2024-08-25 20:10:58,638 ERROR "GET /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-25 20:11:10,207 ERROR Internal Server Error: /news/search/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("<ExtendsNode: extends 'flatpages\\default.html'> must be the first tag in the template."), <traceback object at 0x000001A32DBD0640>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages\default.html'> must be the first tag in the template.
+2024-08-25 20:11:10,230 ERROR "GET /news/search/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 19:45:52,062 ERROR Internal Server Error: /news/index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name '_' is not defined"), <traceback object at 0x000001B97B2E73C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 224, in get
+    my_string = _('Hello world')
+NameError: name '_' is not defined
+2024-08-26 19:45:52,198 ERROR "GET /news/index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:08:10,750 ERROR Internal Server Error: /news/index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name '_' is not defined"), <traceback object at 0x000001B97B1B4740>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 224, in get
+    my_string = _('Hello world')
+NameError: name '_' is not defined
+2024-08-26 20:08:10,769 ERROR "GET /news/index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:10:20,673 ERROR Internal Server Error: /news/index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name '_' is not defined"), <traceback object at 0x0000024B00560300>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 224, in get
+    my_string = _('Hello world')
+NameError: name '_' is not defined
+2024-08-26 20:10:20,704 ERROR "GET /news/index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:12:13,933 ERROR Internal Server Error: /news/index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'HttpResponse' is not defined"), <traceback object at 0x00000220C1E92280>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 230, in get
+    return HttpResponse(render(request, 'index.html', context))
+NameError: name 'HttpResponse' is not defined
+2024-08-26 20:12:13,971 ERROR "GET /news/index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:12:56,405 ERROR Internal Server Error: /news/index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'HttpResponse' is not defined"), <traceback object at 0x00000220C1DFEB00>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 230, in get
+    return HttpResponse(render(request, 'index.html', context))
+NameError: name 'HttpResponse' is not defined
+2024-08-26 20:12:56,422 ERROR "GET /news/index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:13:27,713 ERROR Internal Server Error: /news/index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'HttpResponse' is not defined"), <traceback object at 0x00000220C1B15940>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 230, in get
+    return HttpResponse(render(request, 'index.html', context))
+NameError: name 'HttpResponse' is not defined
+2024-08-26 20:13:27,732 ERROR "GET /news/index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:14:00,758 ERROR Internal Server Error: /news/index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'HttpResponse' is not defined"), <traceback object at 0x00000220C1B585C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 230, in get
+    return HttpResponse(render(request, 'index.html', context))
+NameError: name 'HttpResponse' is not defined
+2024-08-26 20:14:00,776 ERROR "GET /news/index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:18:27,739 ERROR Internal Server Error: /index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'HttpResponse' is not defined"), <traceback object at 0x000002356035F740>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 230, in get
+    return HttpResponse(render(request, 'index.html', context))
+NameError: name 'HttpResponse' is not defined
+2024-08-26 20:18:27,814 ERROR "GET /index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:23:06,259 ERROR Internal Server Error: /index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'HttpResponse' is not defined"), <traceback object at 0x00000228DE2EF200>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 230, in get
+    return HttpResponse(render(request, 'index.html', context))
+NameError: name 'HttpResponse' is not defined
+2024-08-26 20:23:06,291 ERROR "GET /index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:23:58,051 ERROR Internal Server Error: /index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'HttpResponse' is not defined"), <traceback object at 0x00000247A92E95C0>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 230, in get
+    return HttpResponse(render(request, 'index.html', context))
+NameError: name 'HttpResponse' is not defined
+2024-08-26 20:23:58,084 ERROR "GET /index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-26 20:24:10,248 ERROR Internal Server Error: /index D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'HttpResponse' is not defined"), <traceback object at 0x00000247A92E5E00>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 230, in get
+    return HttpResponse(render(request, 'index.html', context))
+NameError: name 'HttpResponse' is not defined
+2024-08-26 20:24:10,267 ERROR "GET /index HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-27 21:22:06,420 ERROR Internal Server Error: /news/subscriptions/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 16: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x0000019C0EFA2A80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 217, in subsciptions
+    return render(request,
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-08-27 21:22:06,561 ERROR "GET /news/subscriptions/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-27 21:22:19,116 ERROR Internal Server Error: /news/subscriptions/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 16: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x0000019C0F22DB40>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 217, in subsciptions
+    return render(request,
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-08-27 21:22:19,146 ERROR "GET /news/subscriptions/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-27 21:24:02,120 ERROR Internal Server Error: /news/subscriptions/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 16: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x0000019C0F371700>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 217, in subsciptions
+    return render(request,
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-08-27 21:24:02,153 ERROR "GET /news/subscriptions/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-27 21:24:33,213 ERROR Internal Server Error: /news/subscriptions/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 17: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x0000019C0F1C8F80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 217, in subsciptions
+    return render(request,
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-08-27 21:24:33,245 ERROR "GET /news/subscriptions/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-27 21:24:39,250 ERROR Internal Server Error: /news/articles/create D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 9: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x0000019C0F170600>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-27 21:24:39,285 ERROR "GET /news/articles/create HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-27 21:26:31,517 ERROR Internal Server Error: /news/subscriptions/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 17: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x000001EC26C0AE00>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 217, in subsciptions
+    return render(request,
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: 'trans', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-08-27 21:26:31,644 ERROR "GET /news/subscriptions/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-08-27 21:28:20,241 ERROR Internal Server Error: /news/news/create/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 9: 'trans', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001EC26E3CC80>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+2024-08-27 21:28:20,266 ERROR "GET /news/news/create/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-09-04 21:48:01,274 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.utils.datastructures.MultiValueDictKeyError'>, MultiValueDictKeyError('timezone'), <traceback object at 0x0000013F62DE1540>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 32, in post
+    request.session['django_timezone'] = request.POST['timezone']
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2024-09-04 21:48:01,435 ERROR "POST /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-09-04 21:48:09,296 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.utils.datastructures.MultiValueDictKeyError'>, MultiValueDictKeyError('timezone'), <traceback object at 0x0000013F63015340>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 32, in post
+    request.session['django_timezone'] = request.POST['timezone']
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2024-09-04 21:48:09,317 ERROR "POST /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-09-04 22:48:20,101 ERROR Internal Server Error: /news/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for '' not found. '' is not a valid view function or pattern name."), <traceback object at 0x000001ED7D4D5140>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 33, in post
+    return redirect('')
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+2024-09-04 22:48:20,282 ERROR "POST /news/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-09-04 23:06:33,396 ERROR Internal Server Error: /news/subscriptions/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid filter: 'timezone'"), <traceback object at 0x000002356937A140>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\pythonProject_NewsPortal\NewsPortal_project\NewsPortal_app\views.py", line 234, in subsciptions
+    return render(request,
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'timezone'
+2024-09-04 23:06:33,554 ERROR "GET /news/subscriptions/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2024-09-04 23:06:41,044 ERROR Internal Server Error: /news/search/ D:\pythonProject_NewsPortal\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid filter: 'timezone'"), <traceback object at 0x000002356976B540>)
+Traceback (most recent call last):
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\pythonProject_NewsPortal\venv\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'timezone'
+2024-09-04 23:06:41,094 ERROR "GET /news/search/ HTTP/1.1" 500 145 D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2025-09-06 21:53:26,311 ERROR You're accessing the development server over HTTPS, but it only supports HTTP. D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2025-09-06 21:53:26,330 ERROR You're accessing the development server over HTTPS, but it only supports HTTP. D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2025-09-06 21:53:26,392 ERROR You're accessing the development server over HTTPS, but it only supports HTTP. D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2025-09-06 21:53:32,965 ERROR You're accessing the development server over HTTPS, but it only supports HTTP. D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
+2025-09-06 21:53:32,972 ERROR You're accessing the development server over HTTPS, but it only supports HTTP. D:\pythonProject_NewsPortal\venv\lib\site-packages\django\core\servers\basehttp.py None
